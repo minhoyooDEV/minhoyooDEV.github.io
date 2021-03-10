@@ -1,11 +1,11 @@
 {
-  "name": "slow-grown",
+  "name": "myhome",
   "version": "0.1.0",
-  "homepage": "https://minhoyoodev.github.io/minhoyooDEV.github.io",
+  "homepage": "minhoyooDEV.github.io",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:static": "next build && next export",
+    "build:static": "rm -rf node_modules/.cache &&next build && next export",
     "start": "next start",
     "deploy": "gh-pages -d ./out"
   },
