@@ -16,15 +16,17 @@
     "postcss-preset-env": "^6.7.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "sass": "^1.32.8",
-    "tailwindcss": "^2.0.1-compat"
+    "sass": "^1.32.8"
   },
   "devDependencies": {
     "@types/node": "^14.14.33",
     "@types/react": "^17.0.3",
+    "autoprefixer": "^10.2.5",
     "husky": "^4.3.8",
     "lint-staged": "^10.5.4",
+    "postcss": "^8.2.8",
     "prettier": "2.2.1",
+    "tailwindcss": "^2.0.3",
     "typescript": "^4.2.3"
   },
   "husky": {
