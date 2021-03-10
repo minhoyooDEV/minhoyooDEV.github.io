@@ -4,6 +4,9 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   return (
     <div className={styles.container}>
+    <div className="flex flex-col">
+    asdasd
+    </div>
       <Head>
         <title>Create Next App 2</title>
         <link rel="icon" href="/favicon.ico" />

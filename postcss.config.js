@@ -1,6 +1,8 @@
 module.exports = {
   plugins:
-    process.env.NODE_ENV === "production"
+    [
+      "tailwindcss",
+      ...process.env.NODE_ENV === "production"
       ? [
           "postcss-flexbugs-fixes",
           [
@@ -18,5 +20,5 @@ module.exports = {
         ]
       : [
           // No transformations in development
-        ],
+        ],]
 };
