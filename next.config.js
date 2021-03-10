@@ -12,8 +12,7 @@ const {
 
 const basePath ="";
 // const basePath = ON_GITHUB_PAGES ? "/mynome" : "";
-const assetPrefix = "";
-// const assetPrefix = ON_GITHUB_PAGES ? "/mynome/" : "";
+const assetPrefix = ON_GITHUB_PAGES ? "https://cdn.statically.io/gh/minhoyooDEV/minhoyoodev.github.io/gh-pages/" : "";
 
 // https://dev.to/jameswallis/deploying-a-next-js-app-to-github-pages-24pn
 module.exports = (phase, { defaultConfig }) => {

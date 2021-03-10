@@ -1,7 +1,7 @@
 {
   "name": "myhome",
   "version": "0.1.0",
-  "homepage": "minhoyooDEV.github.io",
+  "homepage": "https://minhoyooDEV.github.io",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
