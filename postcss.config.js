@@ -19,6 +19,5 @@ module.exports = {
           ],
         ]
       : [
-          // No transformations in development
         ],]
 };
