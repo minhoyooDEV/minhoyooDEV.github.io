@@ -45,9 +45,22 @@ export default function Home({ data }: HomeProps) {
             );
           })}
         </div>
-        {data.map((markdown, i) => {
+        <div className="my-4 grid grid-cols-3 gap-4">
+          {[1, 2, 3, 4, 5, 6].map((v) => {
+            const id = "spandable-" + v;
+            return (
+              <div className="group p-4  bg-red-300 rounded-md " key={`${v}`}>
+                <input className="" type="checkbox" id={id} />
+                <label htmlFor={id}>{v}</label>
+                <div className="group-check:text-blue-600">hello ~</div>
+                {v}
+              </div>
+            );
+          })}
+        </div>
+        {/* {data.map((markdown, i) => {
           return <ReactMarkdown key={i} children={markdown} />;
-        })}
+        })} */}
       </main>
 
       <footer className={styles.footer}>
