@@ -1,0 +1,9 @@
+.SkillCardList {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	gap: 3rem;
+	> * {
+		flex: 0 0 calc(33% - 6rem);
+	}
+}

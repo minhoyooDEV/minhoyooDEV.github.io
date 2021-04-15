@@ -1,0 +1,23 @@
+.perspertive {
+	perspective: 1000px;
+	display: flex;
+	justify-content: center;
+}
+.container {
+	transform-style: preserve-3d;
+}
+.card {
+}
+
+.sneaker {
+	& img {
+		transition: all 0.75s ease-out;
+	}
+}
+
+.info {
+	& h1,
+	& h3 {
+		transition: all 0.75s ease-out;
+	}
+}
