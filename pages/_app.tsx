@@ -9,14 +9,13 @@ function MyApp({ Component, pageProps }: AppProps) {
 				<a>
 					<h1 className={'container mx-auto mb-10 text-center text-7xl'}>
 						Welcome to &nbsp;
-						<a className="text-red-400 font-mono" href="https://github.com/minhoyooDEV">
+						<span className="text-red-400 font-mono">
 							MYNO<span className="text-red-600">UB</span>
-						</a>
+						</span>
 					</h1>
 				</a>
 			</Link>
-			<body>
-				{/* <div className={'container mx-auto grid grid-cols-2 sm:grid-cols-3'}>
+			{/* <div className={'container mx-auto grid grid-cols-2 sm:grid-cols-3'}>
 					<ul>
 						{languages.map(language => {
 							return (
@@ -29,8 +28,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 						})}
 					</ul>
 				</div> */}
-				<Component {...pageProps} />
-			</body>
+			<Component {...pageProps} />
 			<footer className={'flex justify-center w-full my-4'}>
 				Powered by&nbsp;
 				<b>
