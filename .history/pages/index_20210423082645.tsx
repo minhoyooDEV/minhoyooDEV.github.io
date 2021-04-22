@@ -25,7 +25,7 @@ const projectsData = [
 		date: '2021-04-21',
 		name: 'my-style-commerce',
 		link: 'https://my-style-commerce-rouge.vercel.app',
-		repo: 'https://github.com/minhoyooDEV/my-style-commerce',
+		repo: 'https://github.com/minhoyooDEV/myno_lms',
 	},
 	{
 		date: '2021-04-10',
