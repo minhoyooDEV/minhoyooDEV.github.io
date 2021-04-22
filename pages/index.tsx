@@ -19,44 +19,61 @@ const skillData: SkillData[] = [
 		img: '/skill_icon/python.png',
 	},
 ];
+
+const projectsData = [
+	{
+		date: '2021-04-21',
+		name: 'my-style-commerce',
+		link: 'https://my-style-commerce-rouge.vercel.app',
+		repo: 'https://github.com/minhoyooDEV/myno_lms',
+	},
+	{
+		date: '2021-04-10',
+		name: 'my-lms',
+		link: 'https://myno-lms.vercel.app/courses',
+		repo: 'https://github.com/minhoyooDEV/myno_lms',
+	},
+];
 interface HomeProps {
 	data: string[];
 }
 export default function Home({ data }: HomeProps) {
 	return (
-		<div className="min-h-screen bg-gray-100">
+		<>
 			<Head>
-				<title>WELCOME✋ I LOVE YOU 😍</title>
+				<title>WELCOME✋ </title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-
-			<SkillCardList>
-				{skillData.map(props => (
-					<SkillCard key={props.title} {...props} />
-				))}
-			</SkillCardList>
-			{/* <div className="my-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-				{[1, 2, 3, 4, 5, 6].map(v => {
-					return <Spandable key={v} id={v} content={v} />;
-				})}
-			</div> */}
-		</div>
+			<section className="container mx-auto px-4"></section>
+			<section className="container mx-auto px-4">
+				<h2 className="text-2xl font-bold">SAMPLE PROJECTS</h2>
+				<ul className="ml-5 list-disc">
+					{projectsData.map(({ date, link, repo, name }) => {
+						return (
+							<li key={name} className="mt-3">
+								<h4 className="text-xl">
+									<b>{date}</b> - <b>{name}</b>
+								</h4>
+								<div>
+									<a className="text-purple-600" href={link}>
+										{link}
+									</a>
+								</div>
+								<div>
+									<a className="text-purple-400" href={repo}>
+										{repo}
+									</a>
+								</div>
+							</li>
+						);
+					})}
+				</ul>
+				{/* <SkillCardList>
+					{skillData.map(props => (
+						<SkillCard key={props.title} {...props} />
+					))}
+				</SkillCardList> */}
+			</section>
+		</>
 	);
 }
-
-// export async function getStaticProps() {
-// const files = fs.readdirSync(`${process.cwd()}/content`, "utf-8");
-// const blogs = files.filter((fn) => fn.endsWith(".md"));
-// const data = blogs.map((blog) => {
-//   const path = `${process.cwd()}/content/${blog}`;
-//   const rawContent = fs.readFileSync(path, {
-//     encoding: "utf-8",
-//   });
-//   return rawContent;
-// });
-// return {
-//   props: {
-//     data,
-//   },
-// };
-// }
